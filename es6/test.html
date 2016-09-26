@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../common/js/jquery-1.8.3.js"></script>
+<script>
+    {
+        let a=10;
+        var b=20;
+    }
+    console.log(b)
+//    console.log(a)
+
+    var arr=[1,2]
+    for (let i = 0; i < arr.length; i++) {}
+
+//    console.log(i);
+
+    var a = [];
+    for (var i = 0; i < 10; i++) {
+        a[i] = function () {
+            console.log(i);
+        };
+    }
+    a[6](); // 10
+
+
+    var a = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = function () {
+            console.log(i);
+        };
+    }
+    a[6](); // 6
+
+    console.log(foo); // 输出undefined
+//    console.log(bar); // 报错ReferenceError
+
+    var foo = 2;
+    let bar = 2;
+
+    var tmp = new Date();
+
+    function f() {
+        console.log(tmp);
+        if (false) {
+            var tmp = "hello world";
+        }
+    }
+
+    f(); // undefined
+
+//    {{{{
+//        {let insane = 'Hello World'}
+//        console.log(insane); // 报错
+//    }}}};
+
+//    {{{{
+//        let insane = 'Hello World';
+//        {let insane = 'Hello World'}
+//    }}}};
+    let {toString: s} = 123;
+    console.log(s === Number.prototype.toString) // true
+    console.log("\u0061")
+    console.log("\uD842\uDFB7")
+    console.log("\u{20BB7}")
+    console.log("\u20BB7")
+    console.log('\u{1F680}' === '\uD83D\uDE80')
+
+
+    var ss = "𠮷";
+
+    console.log(ss.length, ss.charAt(0) ,ss.charAt(1) ,ss.charCodeAt(0),ss.charCodeAt(1) );
+
+    $('body').html(`
+<ul>
+  <li>first</li>
+  <li>second</li>
+</ul>
+`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
